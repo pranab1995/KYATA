@@ -1,0 +1,440 @@
+/* ---------------------------GENERAL SECTION--------------- */
+
+:root {
+    --theme: #f11919;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    background-color: #fff;
+    color: rgb(42, 41, 41);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.theme-color {
+    color: var(--theme);
+}
+
+.theme-bg {
+    background: var(--theme);
+}
+
+
+.section {
+    text-align: center;
+    padding: 5rem 15%;
+    
+
+    &.grey {
+        
+        background-color: rgb(248, 245, 245);
+    }
+
+    h3 {
+        margin-bottom: 3rem;
+        font-size: 150%;
+        font-weight: 900;
+        margin-top: 1rem;
+
+
+    }
+}
+
+
+.space-tab {
+    flex-grow: 1;
+}
+
+.paragraph {
+    font-size: 90%;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+
+.text-large {
+    font-size: 300%;
+    margin-bottom: 10px;
+    word-spacing: 4px;
+}
+
+.btn-capsule {
+    background-color: var(--theme);
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 60%;
+    word-spacing: 4px;
+    font-weight: bold;
+
+}
+
+.title {
+    font-size: 70%;
+    font-weight: 700;
+}
+
+
+// -------------------COMMON CSS END ------------------------
+
+
+/* ---------NAV BAR START---------------- */
+// _____________________________________________
+
+
+.navbar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    background-attachment: fixed;
+
+    nav {
+        display: flex;
+        padding: 30px 30px 10px 30px;
+        list-style: none;
+        box-shadow: white 0.09px 0.09px;
+        font-weight: 400;
+        font-size: 100%;
+
+        li {
+            margin: 5px;
+
+            &:hover,
+            &:active {
+                color: var(--theme);
+                transition: 0.3s;
+            }
+
+
+            &#logo-text {
+                font-size: 200%;
+                font-weight: 500;
+            }
+        }
+
+        .icon-wrapper {
+            display: flex;
+            color: #fff;
+
+            .navbar-icons {
+                font-size: 25px;
+                margin: 8px 10px 10px 10px;
+
+                &:hover {
+                    color: var(--theme);
+                    transition: 0.3s;
+                }
+            }
+        }
+
+    }
+
+    .hero-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 98px);
+        text-align: center;
+
+    }
+}
+
+
+
+/* -------------------------------------------ABOUT US-------------------------------------------- */
+.about,
+.team {
+    .agency-image {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 70px;
+
+        .image-wrapper {
+            width: 430px;
+            height: 380px;
+            transition: 0.4s;
+            position: relative;
+            padding-right: 15px;
+
+            &::after {
+                content: "+";
+                position: absolute;
+                color: white;
+                font-size: 300%;
+                font-weight: 100;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+
+            }
+
+            &:hover {
+                height: 340px;
+                width: 380px;
+                filter: brightness(0.4);
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+        }
+    }
+
+    .about-para {
+        color: rgb(139, 136, 136);
+    }
+
+
+    .about-numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .number-content {
+            background-color: rgb(236, 231, 231);
+            padding: 2rem 5rem 2rem;
+            margin: 60px 2px;
+
+            p {
+                font-weight: 400;
+                color: grey;
+            }
+        }
+    }
+}
+
+
+// -----------------------------------OUR SERVICES-----------------------
+
+.services {
+
+    .service-col {
+        display: flex;
+
+        .service-types {
+            position: center;
+            padding: 30px 20px;
+            font-weight: 300;
+            text-align: left;
+            display: flex;
+
+            .service-icon {
+                padding-right: 30px;
+
+                i {
+                    font-size: 200%;
+                    color: var(--theme);
+                }
+            }
+
+            .service-content {
+                p {
+                    font-size: 100%;
+                    padding-top: 15px;
+
+                }
+
+                h5 {
+                    font-size: 125%;
+                    word-spacing: 4px;
+                }
+
+                h5:hover,
+                h5:active {
+                    color: var(--theme);
+                    transition: 0.3s;
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+
+
+// --------------------------OUR TEAM-----------------------
+
+// ______________________________________________________________ 
+
+.teams{
+    .triple-dot {
+        margin: 0;
+        padding: 0;
+        font-size: 200%;
+        word-spacing: 4px;
+    }
+    
+}
+
+
+
+
+// ---------------------OUR SKILLS----------------------------
+
+.skills{
+
+    .row{
+        display: flex;
+
+        .type {
+            width: 100%;
+            margin-right: 60px;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            .desc{
+                display: flex;
+                width: 90%;
+                justify-content: space-between;
+
+                p{
+                    font-size: 70%;
+                    font-weight: 700;
+                }
+            }
+    
+    
+            .progress-bar {
+                margin-top: 20px;
+                width: 100%;
+                background-color: rgb(185, 183, 183);
+                height: 12px;
+    
+                .progress-bar-color {
+                    background-color:var(--theme);
+                    height:100%;
+
+                    &.first{
+                        width: 90%;
+                    }
+                    &.second{
+                        width: 99%;
+                    }
+                    &.third{
+                        width: 85%;
+                    }
+                    &.fourth{
+                        width: 70%;
+                    }
+                    &.fifth{
+                        width: 65%;
+                    }
+                    &.sixth{
+                        width: 80%;
+                    }
+                    
+                }
+            }
+        }
+    }  
+}
+
+.banner{
+    width: 100%;
+    height: 18rem;
+    overflow: hidden;
+    position: relative;
+    background-image:linear-gradient(#e63131b3, #e63131b3), url(./Hands-on-computer-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .banner-text{
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+
+    }
+    
+
+
+}
+
+//-----------------------------------------GET IN TOUCH--------------------------
+
+
+.touch{
+        
+    .row{
+        display: flex;
+        justify-content: center;
+
+        .type{
+
+            input{
+                display: block;
+                height: 3rem;
+                width: 25rem;
+                margin: 0rem 2rem 1.5rem 0rem;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(248, 245, 245);
+                outline: none;
+                padding: 10px;
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+
+                
+            }
+           
+            textarea{
+                height: 100%;
+                width: 25rem;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(248, 245, 245);
+                outline: none;
+                color: #757575;
+                padding:  1rem;
+                
+            }
+        }
+        
+    }
+}
+
+/*--------------------------*/
+/*FOOTER*/
+/*--------------------------*/
+
+footer {
+    background-color: rgb(34, 33, 33);
+    padding: 60px;
+    font-size: 80%;
+
+    .row{
+        color: white;
+        text-align: center;
+    }
+}
+
+
