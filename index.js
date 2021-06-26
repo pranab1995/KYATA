@@ -1,2 +1,16 @@
-var banner= document.getElementsByClassName("banner")
-banner.textContent= '" IN OUR WORKS, WE TAKE ATTENTION TO EVERY DETAILS TO DELIVER THE BEST SERVICE TO OUR CUSTOMERS"'
+const express = require('express');
+const port = process.env.PORT || 8080;
+const app = express();
+const path = require('path')
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/*', (req,res,next) => { 
+                res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+
+
+
+app.listen(port);
+console.log('listening to port 2000');

@@ -1,0 +1,26 @@
+{
+  "name": "kyata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranab1995/KYATA.git"
+  },
+  "author": "pranab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pranab1995/KYATA/issues"
+  },
+  "homepage": "https://github.com/pranab1995/KYATA#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
